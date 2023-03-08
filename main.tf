@@ -13,6 +13,6 @@ provider "aws" {}
 
 module "s3" {
   source  = "app.terraform.io/healthfirst/hf-s3/aws"
-  version = "1.0.0"
+  version = "1.1.0"
   bucket  = var.bucket
 }
