@@ -1,14 +1,8 @@
-output "instance_id" {
-  value       = module.ec2.instance_id
-  description = "The instance id"
+output "arn" {
+  value       = aws_s3_bucket.bucket.arn
+  description = "The s3 bucket arn"
 }
-
-output "instance_ip" {
-  value       = module.ec2.instance_ip
-  description = "The instance private IPv4 address"
-}
-
-output "instance_name" {
-  value       = module.ec2.instance_name
-  description = "The instance name"
+output "bucket_name" {
+  value       = aws_s3_bucket.bucket.bucket
+  description = "The s3 bucket name"
 }
